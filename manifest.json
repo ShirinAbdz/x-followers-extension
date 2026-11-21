@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "X Cheaters",
+  "version": "1.0.0",
+  "description": "Unfollow accounts that don't follow you back (skips verified & big accounts).",
+  "permissions": ["storage", "activeTab"],
+  "host_permissions": ["https://x.com/*", "https://twitter.com/*"],
+  "action": { "default_popup": "popup.html", "default_title": "X Cheaters" },
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*", "https://twitter.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

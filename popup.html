@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<style>
+  body{width:320px;font-family:Tahoma,Arial,sans-serif;margin:0;padding:14px;background:#0f1419;color:#e7e9ea;font-size:13px}
+  h1{font-size:16px;margin:0 0 4px}
+  .sub{color:#71767b;font-size:11px;margin-bottom:12px}
+  label{display:block;margin:10px 0 4px}
+  input,textarea{width:100%;box-sizing:border-box;padding:7px;border-radius:6px;border:1px solid #333639;background:#16181c;color:#e7e9ea;direction:ltr}
+  textarea{height:50px;resize:vertical}
+  .row{display:flex;gap:8px;margin-top:12px}
+  button{flex:1;padding:9px;border:0;border-radius:20px;font-weight:bold;cursor:pointer;font-family:inherit}
+  #start{background:#1d9bf0;color:#fff}
+  #stop{background:#f4212e;color:#fff}
+  #log{margin-top:12px;background:#16181c;border-radius:6px;padding:8px;height:110px;overflow:auto;font-size:11px;direction:ltr;text-align:left;white-space:pre-wrap}
+  .stat{margin-top:10px;color:#71767b}
+</style>
+</head>
+<body>
+  <h1>X Cheaters 🕵️</h1>
+  <div class="sub">اول برو به صفحه‌ی Following خودت (x.com/username/following)</div>
+
+  <label>حداکثر تعداد فالوئرِ اکانتی که آنفالو میشه</label>
+  <input type="number" id="maxFollowers" value="1000" min="0">
+
+  <label>حداکثر آنفالو در هر بار اجرا</label>
+  <input type="number" id="maxUnfollows" value="40" min="1">
+
+  <label>فاصله بین آنفالوها (ثانیه، حداقل - حداکثر)</label>
+  <div class="row" style="margin-top:0">
+    <input type="number" id="minDelay" value="5" min="2">
+    <input type="number" id="maxDelay" value="12" min="3">
+  </div>
+
+  <label>لیست سفید (یوزرنیم‌ها با کاما، بدون @)</label>
+  <textarea id="whitelist" placeholder="user1, user2"></textarea>
+
+  <div class="row">
+    <button id="start">شروع</button>
+    <button id="stop">توقف</button>
+  </div>
+  <div class="stat" id="stat">آماده</div>
+  <div id="log"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
