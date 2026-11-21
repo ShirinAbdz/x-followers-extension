@@ -204,3 +204,7 @@ x-cheaters/
 - [ ] پشتیبانی از Firefox
 
 </div>
+
+---
+
+<img width="1920" height="1080" alt="x-cheaters-promo" src="https://github.com/user-attachments/assets/036dec30-0a14-4f0f-a6e0-3fe734af6d87" />
