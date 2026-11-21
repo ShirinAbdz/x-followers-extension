@@ -201,6 +201,3 @@ The code is **plain JavaScript** with no dependencies and no build step.
 - [ ] Export the list of unfollowed accounts
 - [ ] Firefox support
 
----
-
-<p align="center">Made for a cleaner Following list ❤️</p>
