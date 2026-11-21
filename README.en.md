@@ -201,3 +201,6 @@ The code is **plain JavaScript** with no dependencies and no build step.
 - [ ] Export the list of unfollowed accounts
 - [ ] Firefox support
 
+---
+
+<img width="1920" height="1080" alt="x-cheaters-promo" src="https://github.com/user-attachments/assets/54566bff-460f-4781-829e-8f2e4710cf8e" />
